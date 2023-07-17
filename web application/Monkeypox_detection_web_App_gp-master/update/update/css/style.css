@@ -1,0 +1,242 @@
+*{
+    font-family: Segoe UI;
+    font-weight: lighter;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.dark-mode{
+    background-color: black;
+}
+.navbar:not(.dark-mode){
+    background-color: white;
+}
+.dark-mode .navbar{
+    background-color: black;
+}
+.Nbar{
+    padding: 0px 100px;
+}
+.nav-font{
+    font-size: 18px;
+    font-weight: 600;
+}
+.newMain:not(.dark-mode){
+    color: #204473;
+}
+.dark-mode .newMain{
+    color: white;
+}
+.Main:not(.dark-mode){
+    color: #204473;
+}
+.dark-mode .Main{
+    color: #204473;
+}
+.dark-mode .new{
+    color: white
+}
+.container{
+    display: flex;
+    overflow: hidden;
+}
+#Hello,#inf, #symp,#nv,#im,#preventions{
+    display: none;
+}
+.container h2,.symptoms h3{
+    text-align: left;
+    font-weight: 700;
+}
+.container p{
+    text-align: left;
+    font-size: larger;
+    font-weight: 400;
+}
+.container .logo img{
+    width: 100%;
+    height: 100%;
+}
+.symptoms:not(.dark-mode){
+    background-color: #dcdfe8;
+}
+.dark-mode .symptoms{
+    background-color: rgb(30, 29, 29);
+}
+.symptoms, .preventions{
+    padding: 30px;
+}
+.symptoms-logo, .preventions-logo{
+    width: 100%;
+    height: 10vh;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.card{
+    border: 0px;
+    background-color: transparent;
+    transition: background-color 1s;
+}
+.card:hover:not(.dark-mode){
+    background-color: #fff;
+}
+.dark-mode .card:hover{
+    background-color: black;
+}
+.card-image img{
+    padding: 10px;
+    background-color: #C5EAF0;
+    border-radius: 50%;
+} 
+/********************** Start of detection page ************************************/
+.uploadDiv{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center !important;
+    flex-direction: column;
+}
+.uploadDiv .text h2{
+    font-weight: 800;
+}
+input[type="file"]{
+    display: none;
+}
+.custom-file-upload{
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    /* border-radius: 10px; */
+    background-color: #204573 ;
+    display: inline-block;
+    padding: 5px 100px;
+    cursor: pointer;
+    box-shadow:0px 4px 8px black ;
+}
+.custom-file-upload:hover{
+    background-color: #1e62b6 ;
+    transition:  1.5;
+}
+/********************** Contact Us  ********************************/
+.con{
+    width:120vh ;
+    -webkit-box-shadow: 24px -9px 31px -7px rgba(46,74,117,1);
+    -moz-box-shadow: 24px -9px 31px -7px rgba(46,74,117,1);
+    box-shadow: 24px -9px 31px -7px rgba(46,74,117,1);
+}
+
+.card{
+    border-color: white;
+}
+.header{
+   text-align: center;
+   font-weight: 700;
+   font-style: italic;
+   font-size: 32px;
+   padding:20px 0 ;
+   color: #204473;
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+    color: #204473;
+}
+.btn1{
+    text-align: center;
+}
+.btn2{
+    background-color: #204473;
+    color: white;
+}
+.card1{
+    border-width: 2px;
+    border-color: #85a5cc;
+}
+.successMessage:not(.dark-mode){
+    color: #204473;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 5px;
+    font-style: italic;
+}
+.dark-mode .successMessage{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 5px;
+    font-style: italic;
+}
+@media screen and (max-width:910px){
+    .con{
+        width:100vh;
+    }
+}
+@media screen and (max-width:760px){
+    .con{
+        width:80vh;
+    } 
+}
+@media screen and (max-width:610px){
+    .con{
+        width:60vh;
+    } 
+}
+/********************** About Us  ********************************/
+.about-us:not(.dark-mode){
+    /* background-image: url(../imgs/dna.png); */
+    background-color: #f1f1f1;
+}
+.dark-mode .about-us{
+    /* background-image: url(../imgs/dna.png); */
+    background-color: rgb(26, 25, 25);
+}
+.about-us h1{
+    color: #204473;
+} 
+.smallcard:not(.dark-mode){
+    background-color: white;
+}
+.dark-mode .smallcard{
+    background-color: rgb(21, 21, 21);
+}
+.about-us .content{
+    z-index: 99;
+    font-family: Segoe UI;
+    box-shadow:0px 2px 6px gray ;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: large;
+}
+.about-us .content .text{
+    position: relative;   
+}
+.about-us .content img{
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
+    left: -10%;
+    bottom: 0%;
+    transform: translate(-27%,40%);
+}
+.about-us .image img{
+    width: 69%;
+    /* margin-left:50px; */
+    align-items: center;
+}
+.Main1{
+    color:#204473;
+    font-size: 35px;
+    font-weight:450;
+}
+.color{
+    color:#204473;
+    font-weight:lighter;
+}
+
+
+ 
+

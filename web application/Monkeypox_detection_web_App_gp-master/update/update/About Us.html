@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+<body onload="onload()">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid Nbar">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/Asset 40.png" alt="Logo" width="90" height="40" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-items">
+              <li class="nav-item">
+                <a class="nav-link new nav-font me-3" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link new nav-font me-3" href="image_upload.html">Detection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Main nav-font me-3" href="About Us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link new nav-font me-3" href="Contact Us.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-light dropdown-toggle" id="user-name-label" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a data-bs-toggle="modal" data-bs-target="#imageModalBody" class="dropdown-item" id="HistoryLink"
+                        href="#">History</a></li>
+                    <li><a class="dropdown-item" id="logoutLlnk" href="#">logout</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="btn switch btn-dark" id="darkModeBtn" onclick="darkmode()">Switch Mode</button>   
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--##################### End of nav bar ########################### -->
+
+      <!-------------------- start of about us section--------------------------------->
+      <div class="about-us m-5">
+        <div class="container">
+            <div class="row m-4 ">
+                <div class="col-lg-6 smallcard p-4 content  ">
+                    <div class="text"> 
+                        <h1 class="text-center">About Us</h1>
+                        <!--<img class="w-100" src="imgs/dna.png" alt="">-->
+                        <p class="newMain"><span class="Main1">We</span> are a bioinformatician team that aim to help people who doubt of having a Monkeypox disease.
+                        We can help them to check their illness from home by simply upload a picture of their pills.  
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 image col-sm-12 order-first order-lg-last  ">
+                    <img  class="w-100 h-100 " src="imgs/about-us-card.png" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+  <!--############# End of nav bar ###########-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="imageModalBody" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"> History</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="imageTableBody">
+              <!-- Table rows will be dynamically inserted here -->
+            </tbody>
+          </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>
+

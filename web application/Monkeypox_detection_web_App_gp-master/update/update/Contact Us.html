@@ -1,0 +1,114 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload="onload()">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid Nbar">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/Asset 40.png" alt="Logo" width="90" height="40" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-items">
+              <li class="nav-item">
+                <a class="nav-link new nav-font me-3" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link new nav-font me-3" href="image_upload.html">Detection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link new nav-font me-3" href="About Us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Main nav-font me-3"  aria-current="page" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-light dropdown-toggle" id="user-name-label" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a data-bs-toggle="modal" data-bs-target="#imageModalBody" class="dropdown-item" id="HistoryLink"
+                        href="#">History</a></li>
+                    <li><a class="dropdown-item" id="logoutLlnk" href="#">logout</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="btn switch btn-dark" id="darkModeBtn" onclick="darkmode()">Switch Mode</button>   
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--##################### end of nav bar########################### -->
+        
+
+      <!--##################### Contact Us ########################### -->
+      <div class="con card m-auto my-5">
+        <div class="shadow w-100 p-4 m-auto">
+          <form id="contactForm">
+            <h2 class="header">Contact Us</h2>
+            <label for="Name">Name</label>
+            <input class="form-control card1 my-3" type="text" id="name" placeholder="Enter Your Name...">
+            <label for="Email">Email</label>
+            <input class="form-control card1 my-3" type="email" id="email" required placeholder="Enter Your Email...">
+            <label for="Phone">Phone</label>
+            <input class="form-control card1 my-3" type="number" id="phone" placeholder="Enter Your Phone...">
+            <label for="Message">Message</label>
+            <textarea class="form-control card1 my-3 h-40" type="text" id="message" placeholder="Enter Your Message..."></textarea>
+            <div class="btn1">
+              <button type="submit" class="btn btn2 w-25" id="contact_submit_btn">Send</button>
+            </div>
+          </form>
+          <div class="successMessage" id="successMessage"></div>
+        </div>
+      </div>
+        
+  <!-- Modal -->
+  <div class="modal fade" id="imageModalBody" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel"> History</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="imageTableBody">
+            <!-- Table rows will be dynamically inserted here -->
+          </tbody>
+        </table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/contactUs.js"></script>
+    
+
+    </body>
+</html>

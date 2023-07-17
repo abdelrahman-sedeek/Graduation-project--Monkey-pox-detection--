@@ -1,0 +1,241 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onload()">
+  <!--############# Start of nav bar ##############-->
+  <nav class="navbar navbar-expand-lg" id="nv">
+    <div class="container-fluid Nbar">
+      <a class="navbar-brand" href="#">
+        <img src="imgs/Asset 40.png" alt="Logo" width="90" height="40" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-items">
+          <li class="nav-item">
+            <a class="nav-link Main nav-font me-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link new nav-font me-3" href="image_upload.html">Detection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link new nav-font me-3" href="About Us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link new nav-font me-3" href="Contact Us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" id="user-name-label" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu">
+                <li><a data-bs-toggle="modal" data-bs-target="#imageModalBody" class="dropdown-item" id="HistoryLink"
+                    href="#">History</a></li>
+                <li><a class="dropdown-item" id="logoutLlnk" href="#">logout</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="btn switch btn-dark" id="darkModeBtn" onclick="darkmode()">Switch Mode</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--############# End of nav bar #################-->
+
+
+  <!--########### Start of first component ##########-->
+  <div class="container text-center mb-2" id="hello">
+    <div class="row mb-auto">
+      <div class="col-xl-6 col-lg-6 order-sm-last order-md-last order-lg-first col-md-12 mt-5">
+        <div class="info" id="inf">
+          <h2 class="Main">Monkeypox Disease</h2>
+          <p class="newMain">Monkeypox is a rare disease caused by infection with the Monkeypox virus.
+            Monkeypox virus is part of the same family of viruses as variola virus,
+            the virus that causes smallpox. Monkeypox symptoms are similar to smallpox symptoms,
+            but milder, and Monkeypox is rarely fatal. Monkeypox is not related to chickenpox.
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 order-sm-first  order-md-first order-lg-last col-md-12">
+        <div class="logo" id="im">
+          <img src="imgs/1-removebg.png" class="card-img-top" alt="Picture describes Monkeypox disease effect">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--########### End of first component ###########-->
+
+
+  <!--########### Start of Symptoms ###############-->
+  <div class="symptoms newsymptoms col-md-12 text-center" id="symp">
+    <div class="symptoms-logo">
+      <h2 class="newMain mb-4">Symptoms...</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-6">
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-fever-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">Fever</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">This means you feel hot to touch on your chest or back (you do not
+              need to measure your temperature).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-exhaustion-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">Exhaustion</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">It is the feeling of extreme tiredness or exhaustion often involving
+              muscle weakness that can result in difficulty performing tasks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-rash-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">Rash</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">The development of a rash which may last for two to three weeks. The
+              rash can affect the face, palms of the hands, and soles of the feet. It may also be found in the mouth,
+              throat, or on the eyes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-headache-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">Headache</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">It is pain or discomfort in the head or face. Headaches vary greatly
+              in terms of the location and intensity of the pain, and how often the headaches occur. The brain tissue
+              doesn’t have pain-sensitive nerve fibers and doesn’t feel pain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--########### End of Symptoms ##############-->
+
+
+  <!--########### Start of Preventions ############-->
+
+  <div class="preventions text-center col-md-12 mt-2" id="preventions">
+    <div class="preventions-logo">
+      <h2 class="Main mb-4">Preventions</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-wash-hands-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">Washing Hands</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">Wash your hands often with soap and water, or use an alcohol-based
+              hand sanitizer, especially before eating or touching your face and after you use the bathroom.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-vaccines-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">Get Vaccinated</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">The JYNNEOS vaccine is approved for prevention of smallpox and mpox.
+              It is the primary vaccine being used in the U.S. during this outbreak.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pt-2">
+          <div class="card-image text-center">
+            <img src="imgs/icons8-no-touch-100.png" class="card-img-top w-25" alt="...">
+          </div>
+          <div class="card-logo">
+            <h4 class="Main text-center">
+              Avoid Using Infected Objects.</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text newMain fw-bolder">Do not share eating utensils or cups with a person with mpox.
+              Do not handle or touch the bedding, towels, or clothing of a person with mpox.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModalBody" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"> History</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="imageTableBody">
+              <!-- Table rows will be dynamically inserted here -->
+            </tbody>
+          </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>
